@@ -8,4 +8,7 @@ RUN \
 
 VOLUME /blockchain
 
+EXPOSE 30303
+EXPOSE 8545
+
 ENTRYPOINT ["/go/bin/geth", "--datadir=/blockchain"]
